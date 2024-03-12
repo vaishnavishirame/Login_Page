@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovebirds</title>
+    <link rel="stylesheet" href="lovebirds.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Kalnia:wght@300&family=Whisper&display=swap');
+      </style>
+      
+</head>
+<body>
+    <div class="maindiv">
+      <div class="imgdiv">
+      </div>
+      <div class="lgndiv">
+        <div class="loginform">
+          <h1 class="login">Login form</h1>
+          <form autocomplete="off" class="form">
+            <label for="username">Username</label>
+            <input type="text" class="username" name="username" placeholder="USERNAME" id="un"><br><br>
+            <label for="password">Password</label>
+              <input type="text" class="username" name="password"placeholder="PASSWORD" id="pswd"><br>
+              <div class="button">
+              <input type="submit" name="login" value="LOGIN" class="lbutton" onclick = submitTheForm()  >
+            <div>
+              <input type="reset" name="cancel" value="CANCEL"  >
+      </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script>
+        let un1 = "Vaishu";
+        let pswd1 = "vaishu123";
+        function submitTheForm()
+        {
+            let un2 = document.getElementById("un").value ;
+            let pswd2 = document.getElementById("pswd").value ;
+    
+            if (un1==un2 && pswd1==pswd2) {
+              
+                open("Home.html") ;
+    
+            } else {
+                alert("Incorrect Credentials")  ;         
+            }
+        }
+      </script>
+    </div>
+</body>
+</html>
